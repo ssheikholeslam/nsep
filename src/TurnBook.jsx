@@ -10,8 +10,8 @@ const TurnBook = ({ options, className, style, turnContainerRef }) => {
       const flipbookOptions = Object.assign({}, options, {
         display: 'double',
         autoCenter: true,
-        width: 2000,
-        height: 1500,
+        width: 1066.6666666667,
+        height: 800,
         page: 2,
       });
 
