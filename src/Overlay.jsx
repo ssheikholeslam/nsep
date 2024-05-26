@@ -110,7 +110,7 @@ export function Overlay() {
               </div>
             )}
             <Pages onPrevPage={handlePrevPage} onNextPage={handleNextPage} />
-            <button className="exit" style={{ background: snap.color }} onClick={() => { state.intro = true; state.show3DAsset = true; state.showHTMLFlipBook = false }}>
+            <button className="exit" style={{ background: snap.color, zIndex: '200' }} onClick={() => { state.intro = true; state.show3DAsset = true; state.showHTMLFlipBook = false }}>
               GO BACK
               <AiOutlineArrowLeft size="1.3em" />
             </button>
