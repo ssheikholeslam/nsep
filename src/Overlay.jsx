@@ -57,7 +57,7 @@ export function Overlay() {
         style={{ padding: '30px 50px', zIndex: '100'}}
       >
         <a href="#">
-          <img src="./Logo.svg" alt="Logo" width="40" height="40" />
+          <img src="./Logo.svg" alt="Logo" width="40" height="40" onClick={() => window.location.reload()} />
         </a>
         <motion.div animate={{ x: snap.intro ? 0 : 100, opacity: snap.intro ? 1 : 0 }} transition={transition}>
           <a href="https://www.amazon.com/Reflections-9-Stories-11-Poems/dp/B0B112GRKS" target="_blank">
