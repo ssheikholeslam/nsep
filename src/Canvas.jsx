@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useGLTF, useTexture, AccumulativeShadows, RandomizedLight, Decal, Environment, Center } from '@react-three/drei'
+import { useGLTF, AccumulativeShadows, RandomizedLight, Environment, Center } from '@react-three/drei'
 import { easing } from 'maath'
 import { useSnapshot } from 'valtio'
 import { state } from './store'
@@ -55,7 +55,7 @@ function CameraRig({ children }) {
 }
 
 function Book(props) {
-  const { nodes, materials } = useGLTF('/book.glb')
+  const { nodes, materials } = useGLTF('./book.glb')
 
   const materialProps = {
     roughness: 0.6, 
@@ -88,4 +88,4 @@ function Book(props) {
   )
 }
 
-useGLTF.preload('/book.glb');
+useGLTF.preload('./book.glb');
