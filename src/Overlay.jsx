@@ -56,7 +56,7 @@ export function Overlay() {
         transition={transition}
         style={{ padding: '30px 50px', zIndex: '100'}}
       >
-        <a href="/">
+        <a href="#">
           <img src="./Logo.svg" alt="Logo" width="40" height="40" />
         </a>
         <motion.div animate={{ x: snap.intro ? 0 : 100, opacity: snap.intro ? 1 : 0 }} transition={transition}>
@@ -110,7 +110,7 @@ export function Overlay() {
               </div>
             )}
             <Pages onPrevPage={handlePrevPage} onNextPage={handleNextPage} />
-            <button className="exit" style={{ background: snap.color, zIndex: '200' }} onClick={() => { state.intro = true; state.show3DAsset = true; state.showHTMLFlipBook = false }}>
+            <button className="exit" style={{ background: snap.color, zIndex: 200 }} onClick={() => { state.intro = true; state.show3DAsset = true; state.showHTMLFlipBook = false }}>
               GO BACK
               <AiOutlineArrowLeft size="1.3em" />
             </button>
