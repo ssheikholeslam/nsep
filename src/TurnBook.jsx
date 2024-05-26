@@ -7,19 +7,47 @@ const TurnBook = ({ options, className, style, turnContainerRef }) => {
 
   useEffect(() => {
     if (turnContainer.current) {
-      const flipbookOptions = Object.assign({}, options, {
+      // Function to preload images
+      const preloadImages = () => {
+        const imageUrls = [
+          "./cover.png",
+          "./01.png",
+          "./02.png",
+          "./03.png",
+          "./04.png",
+          "./05.png",
+          "./06.png",
+          "./07.png",
+          "./08.png",
+          "./09.png",
+          "./10.png"
+        ];
+
+        imageUrls.forEach((imageUrl) => {
+          const img = new Image();
+          img.src = imageUrl;
+        });
+      };
+
+      // Preload images when component mounts
+      preloadImages();
+
+      const flipbookOptions = {
         display: 'double',
         autoCenter: true,
         width: 1066.6666666667,
         height: 800,
         page: 2,
-      });
+        ...options
+      };
 
       $(turnContainer.current).turn(flipbookOptions);
+
       $(turnContainer.current).bind("turning", function(event, page) {
         if (page === 1)
           event.preventDefault();
       });
+
       $(turnContainer.current).bind("start", function(event, pageObject) {
         if (pageObject.page === 1)
           event.preventDefault();
