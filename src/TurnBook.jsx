@@ -7,6 +7,14 @@ const TurnBook = ({ options, className, style, turnContainerRef }) => {
 
   useEffect(() => {
     if (turnContainer.current) {
+      const flipbookOptions = Object.assign({}, options, {
+        display: 'double',
+        autoCenter: true,
+        width: 1066.6666666667,
+        height: 800,
+        page: 2,
+      });
+
       const preloadImages = () => {
         const imageUrls = [
           "./cover.png",
@@ -29,14 +37,6 @@ const TurnBook = ({ options, className, style, turnContainerRef }) => {
           img.src = imageUrl;
         });
       };
-
-      const flipbookOptions = Object.assign({}, options, {
-        display: 'double',
-        autoCenter: true,
-        width: 1066.6666666667,
-        height: 800,
-        page: 2,
-      });
 
       $(turnContainer.current).turn(flipbookOptions);
 
