@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nsep/static/css/main.7a3b44f4.css",
+    "main.js": "/nsep/static/js/main.3adf0a17.js",
+    "index.html": "/nsep/index.html",
+    "main.7a3b44f4.css.map": "/nsep/static/css/main.7a3b44f4.css.map",
+    "main.3adf0a17.js.map": "/nsep/static/js/main.3adf0a17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a3b44f4.css",
+    "static/js/main.3adf0a17.js"
+  ]
+}
