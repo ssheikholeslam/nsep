@@ -30,36 +30,36 @@ const TurnBook = ({ options, className, style, turnContainerRef }) => {
   return (
     <div className={className} style={style} ref={turnContainer}>
       <div className="page">
-        <img src="/cover.png" alt="Book Cover" />
+        <img src="./cover.png" alt="Book Cover" />
       </div>
       <div className="page">
-        <img src="/01.png" alt="About the Book Cover" />
+        <img src="./01.png" alt="About the Book Cover" />
       </div>
       <div className="page">
-        <img src="/02.png" alt="About the Book" />
+        <img src="./02.png" alt="About the Book" />
       </div>
       <div className="page">
-        <img src="/03.png" alt="About the Authors Cover" />
+        <img src="./03.png" alt="About the Authors Cover" />
       </div>
       <div className="page">
-        <img src="/04.png" alt="About the Authors" />
+        <img src="./04.png" alt="About the Authors" />
       </div>
       <div className="page">
-        <img src="/05.png" alt="Excerpts Cover" />
+        <img src="./05.png" alt="Excerpts Cover" />
       </div>
       <div className="page">
-        <img src="/06.png" alt="Excerpts" />
+        <img src="./06.png" alt="Excerpts" />
       </div>
       <div className="page">
-        <img src="/07.png" alt="Reviews Cover" />
+        <img src="./07.png" alt="Reviews Cover" />
       </div>
       <div className="page">
-        <img src="/08.png" alt="Reviews" />
+        <img src="./08.png" alt="Reviews" />
       </div>
       <div className="page">
-        <img src="/09.png" alt="Contacts Cover" />
+        <img src="./09.png" alt="Contacts Cover" />
       </div>
-      <div className="page" style={{ position: "relative", backgroundImage: "url('/10.png')", backgroundSize: "cover", display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div className="page" style={{ position: "relative", backgroundImage: "url('./10.png')", backgroundSize: "cover", display: "flex", alignItems: "center", justifyContent: "center" }}>
         <div style={{ padding: "20px", backgroundColor: "#F5F3EF" }}>
           <h1 style={{ color: "#5C5C5C" }}>PAUL’S CONTACTS</h1>
           <p><strong style={{ color: "#5C5C5C", marginRight: "10px" }}>EMAIL</strong> <a href="mailto:pkowalski@teladochealth.com" style={{ color: "#454545", textDecoration: "underline" }}>pkowalski@teladochealth.com</a></p>
