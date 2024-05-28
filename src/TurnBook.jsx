@@ -87,7 +87,6 @@ const TurnBook = ({ options, className, style, turnContainerRef }) => {
       <div className="page" style={{ position: "relative", backgroundImage: "url('./10.png')", backgroundSize: "cover", display: "flex", alignItems: "center", justifyContent: "center" }}>
         <div style={{ padding: "20px", backgroundColor: "#F5F3EF" }}>
           <h1 style={{ color: "#5C5C5C" }}>PAUL’S CONTACTS</h1>
-          <p><strong style={{ color: "#5C5C5C", marginRight: "10px" }}>EMAIL</strong> <a href="mailto:pkowalski@teladochealth.com" style={{ color: "#454545", textDecoration: "underline" }}>pkowalski@teladochealth.com</a></p>
           <p><strong style={{ color: "#5C5C5C", marginRight: "10px" }}>FACEBOOK</strong> <a href="https://www.facebook.com/paul.kowalski.9400" target="_blank" style={{ color: "#454545", textDecoration: "underline" }}>Paul Kowalski</a></p>
           <p><strong style={{ color: "#5C5C5C", marginRight: "10px" }}>LINKEDIN</strong> <a href="https://www.linkedin.com/in/paul-kowalski-110b672/" target="_blank" style={{ color: "#454545", textDecoration: "underline" }}>Paul Kowalski</a></p>
 
